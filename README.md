@@ -1,2 +1,4 @@
 # Wojix.github.io
-Wojix.github.io
+
+## 📄 License
+MIT License
