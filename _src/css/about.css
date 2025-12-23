@@ -3,13 +3,13 @@
 }
 
 html.light {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
 }
 
 html.dark {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   --border-inherit2: #27272a;
 }
 
@@ -25,8 +25,8 @@ body {
 
 a {
   display: block;
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .fade-up-group > * {
@@ -35,7 +35,7 @@ a {
   animation:
     fadeUpMove 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards,
     fadeUpOpacity 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: calc(var(--i, 0) * 0.12s), calc(var(--i, 0) * 0.12s);
+  animation-delay: calc(var(--i, 0) * 0.12s);
 }
 
 .name {
@@ -43,17 +43,16 @@ a {
 }
 
 .subtitle {
-  font-weight: 400;
-  color: #a1a1aa;
   margin-top: -25px;
   margin-bottom: 2em;
+  font-weight: 400;
+  color: #a1a1aa;
 }
 
 .about {
+  margin: 0.3em 0;
   font-weight: 400;
   color: #a1a1aa;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
 }
 
 .icon {
@@ -77,9 +76,9 @@ a {
 .coming2 {
   background-color: inherit;
   color: inherit;
-  border-radius: 20px;
-  box-shadow: 0px 5px 16px -12px #a1a1aa;
   border: 2px solid var(--border-inherit2);
+  border-radius: 20px;
+  box-shadow: 0 5px 16px -12px #a1a1aa;
   transition: border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -99,45 +98,21 @@ a {
   height: 135px;
 }
 
-.youtube:hover {
-  border-color: red;
-}
-
-.twitter:hover {
-  border-color: #3BC1FF;
-}
-
-.discord:hover {
-  border-color: #7289DA;
-}
-
-.xbox:hover {
-  border-color: #77BB44;
-}
-
-.steam:hover {
-  border-color: #2a475e;
-}
-
-.github:hover {
-  border-color: #2B3137;
-}
-
-.duolingo:hover {
-  border-color: #58cc02;
-}
-
-.coming2:hover {
-  border-color: white;
-}
+.youtube:hover { border-color: red; }
+.twitter:hover { border-color: #3bc1ff; }
+.discord:hover { border-color: #7289da; }
+.xbox:hover { border-color: #77bb44; }
+.steam:hover { border-color: #2a475e; }
+.github:hover { border-color: #2b3137; }
+.duolingo:hover { border-color: #58cc02; }
+.coming2:hover { border-color: #fff; }
 
 .bg_pattern {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #fff;
   z-index: -1;
 }
 
@@ -146,7 +121,7 @@ a {
     linear-gradient(135deg, #ffcb4c 25%, transparent 25%),
     linear-gradient(225deg, #ffcb4c 25%, transparent 25%),
     linear-gradient(45deg,  #ffcb4c 25%, transparent 25%),
-    linear-gradient(315deg, #ffcb4c 25%, #ffffff 25%);
+    linear-gradient(315deg, #ffcb4c 25%, #fff 25%);
   background-position: 20px 0, 20px 0, 0 0, 0 0;
   background-size: 40px 40px;
   background-repeat: repeat;
