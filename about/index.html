@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wojicle | About</title>
 
-  <title>Wojix | About</title>
-
-  <link rel="icon" href="https://raw.githubusercontent.com/Wojix/Wojix.github.io/refs/heads/main/_assets/icons/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap">
+  <link rel="icon" href="https://raw.githubusercontent.com/Wojix/Wojix.github.io/refs/heads/main/_assets/icons/favicon.ico" type="image/x-icon">
 
   <script>
     (function () {
       const saved = localStorage.getItem("theme")
       const system = window.matchMedia("(prefers-color-scheme: dark)").matches
       const dark = saved ? saved === "dark" : system
+
       document.documentElement.classList.add(dark ? "dark" : "light")
       document.documentElement.style.colorScheme = dark ? "dark" : "light"
     })()
@@ -23,41 +23,35 @@
 </head>
 
 <body>
-  <div class="zigzag bg_pattern"></div>
-
-  <label class="theme">
+<div class="zigzag bg_pattern"></div>
+<label class="theme">
     <input type="checkbox" id="themeToggle">
     <span class="slider"></span>
   </label>
 
-  <div class="fade-up-group">
-    <img
-      class="icon"
-      src="https://raw.githubusercontent.com/Wojix/Wojix.github.io/refs/heads/main/_assets/images/thinking.png"
-      alt=""
-      width="200"
-      height="200"
-      style="--i:1"
-    >
+  <div class="fade-up-group layout">
+  <div class="profile">
+    <img class="icon" style="--i:1" src="https://raw.githubusercontent.com/Wojix/Wojix.github.io/refs/heads/main/_assets/images/thinking.png" alt="" width="200" height="200">
 
-    <h1 class="name" style="--i:1">Wojix</h1>
+    <h1 class="name" style="--i:1">Wojicle</h1>
     <h3 class="subtitle" style="--i:1">ポンコツビギナーエンジニア(笑)</h3>
 
     <div class="icon-title">
-      <i class="fa-solid fa-cake-candles fa-lg" style="--i:1;color:#a1a1aa;"></i>
+      <i class="fa-solid fa-cake-candles fa-lg" style="--i:1; color:#a1a1aa;"></i>
       <h4 class="about" style="--i:1">200X年1月29日</h4>
     </div>
 
     <div class="icon-title">
-      <i class="fa-solid fa-paper-plane fa-lg" style="--i:1;color:#a1a1aa;"></i>
+      <i class="fa-solid fa-paper-plane fa-lg" style="--i:1; color:#a1a1aa;"></i>
       <h4 class="about" style="--i:1">Japan / 日本</h4>
     </div>
 
     <div class="icon-title">
-      <i class="fa-solid fa-graduation-cap fa-lg" style="--i:1;color:#a1a1aa;"></i>
+      <i class="fa-solid fa-graduation-cap fa-lg" style="--i:1; color:#a1a1aa;"></i>
       <h4 class="about" style="--i:1">学生</h4>
     </div>
-
+    </div>
+  <div class="links">
     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="youtube" style="--i:2"></a>
     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="twitter" style="--i:3"></a>
     <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="discord" style="--i:4"></a>
@@ -65,9 +59,10 @@
     <a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer" class="steam" style="--i:6"></a>
     <a href="https://github.com/Wojix" target="_blank" rel="noopener noreferrer" class="github" style="--i:7"></a>
     <a href="https://www.duolingo.com" target="_blank" rel="noopener noreferrer" class="duolingo" style="--i:8"></a>
-
     <div class="coming2" style="--i:9"></div>
   </div>
+  </div>
+<div class="header"></div>
 
   <script src="https://cdn.jsdelivr.net/gh/Wojix/Wojix.github.io@main/_src/js/about.js"></script>
 </body>
