@@ -16,7 +16,7 @@ html.dark {
 }
 
 body {
-  background-color: inherit;
+  background-color: transparent;
   color: inherit;
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
@@ -88,15 +88,16 @@ a {
 .github,
 .duolingo,
 .coming2 {
-  width: 400px;
+  width: 410px;
   height: 135px;
+  grid-column: span 2;
 }
 
 .twitter,
 .discord,
 .xbox,
 .steam {
-  width: 200px;
+  width: 190px;
   height: 135px;
 }
 
@@ -128,6 +129,47 @@ a {
   background-size: 40px 40px;
   background-repeat: repeat;
 }
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 20px;
+  background-color: inherit;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
+  align-items: start;
+  background-color: var(--bg-base);
+  padding: 160px;
+  border-radius: 32px;
+  max-width: 1200px;
+  margin: -40px auto 0;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.header { 
+  background-color: transparent; 
+  width: 500px;
+  height: 60px;  
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 650%);
+  }
 
 @keyframes fadeUpMove {
   to {
