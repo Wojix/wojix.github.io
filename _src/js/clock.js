@@ -1,0 +1,1 @@
+const el=document.getElementById("time"),render=()=>{const d=new Date(),h=String((d.getUTCHours()+9)%24).padStart(2,"0"),m=String(d.getUTCMinutes()).padStart(2,"0");el.textContent=`${h}:${m}`},sync=()=>{render();const now=new Date(),wait=(60-now.getUTCSeconds())*1e3-now.getUTCMilliseconds();setTimeout(()=>{render(),setInterval(render,6e4)},wait)};sync()
