@@ -31,7 +31,7 @@ a {
   text-decoration: none;
 }
 
-.fade-up-group > * {
+.fade-up-group > * > * {
   opacity: 0;
   transform: translateY(10px) translateZ(0);
   animation:
@@ -116,7 +116,7 @@ a {
   width: 100vw;
   height: 100vh;
   background-color: var(--bg-base);
-  z-index: -1;
+  z-index: -999;
 }
 
 .zigzag {
@@ -128,6 +128,7 @@ a {
   background-position: 20px 0, 20px 0, 0 0, 0 0;
   background-size: 40px 40px;
   background-repeat: repeat;
+  z-index: -999;
 }
 
 .links {
@@ -156,20 +157,45 @@ a {
   gap: 12px;
 }
 
-.header { 
-  background-color: transparent; 
+.header {
+  background-color: transparent;
   width: 500px;
-  height: 60px;  
+  height: 60px;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   display: flex;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 650%);
-  }
+  z-index: 999;
+}
+
+.id {
+  color: #a1a1aa;
+}
+
+.squ1, .squ2, .squ3, .squ4, .squ5, .squ6, .squ7 {
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  border-radius: 18px;
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  pointer-events: none;
+  z-index: -998;
+}
 
 @keyframes fadeUpMove {
   to {
